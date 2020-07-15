@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Process
+{% endblock %}
+
+{% block content %}
+<div class="flex items-center justify-center">
+    <button type="button" class="btn btn-primary" id="uploadButton">Upload Image and Process</button>
+    <input type="file" class="hide" id="fileUploader">
+</div>
+
+<div id="response">
+
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script type=text/javascript src="{{ url_for('static', filename='js/process.js') }}"></script>
+{% endblock %}
+
